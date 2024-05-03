@@ -1,6 +1,6 @@
 # Context {.unnumbered}
 
-The project aims to democratize access and understanding of BCIs (Brain-Computer Interfaces), particularly non-invasive EEG devices. This website is curated as a supporting repository to a conceptual kiosk proposed to be set up in NIMHANS Museum or other public spaces.
+The project aims to democratize access and understanding of BCI (Brain-Computer Interfaces), particularly non-invasive EEG devices. This website is curated as a supporting repository to a conceptual kiosk proposed to be set up in NIMHANS Museum or other public spaces.
 
 The main objective is to compile useful information and resources around the theme of Brain computer interfaces to foster curiosity, experimentation and speculation.
 
