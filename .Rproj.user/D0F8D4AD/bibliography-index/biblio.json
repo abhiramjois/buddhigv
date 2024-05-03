@@ -146,6 +146,115 @@
             "language": "en-US",
             "title": "Teenager moves video icons just by imagination - the source - washington university in st. louis",
             "type": ""
+        },
+        {
+            "DOI": "10.15412/J.BCN.03070208",
+            "URL": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4892319/",
+            "author": [
+                {
+                    "family": "Marzbani",
+                    "given": "Hengameh"
+                },
+                {
+                    "family": "Marateb",
+                    "given": "Hamid Reza"
+                },
+                {
+                    "family": "Mansourian",
+                    "given": "Marjan"
+                }
+            ],
+            "container-title": "Basic and Clinical Neuroscience",
+            "id": "marzbani2016",
+            "issue": "2",
+            "issued": {
+                "date-parts": [
+                    [
+                        2016,
+                        4
+                    ]
+                ]
+            },
+            "note": "Number: 2 PMID: 27303609 PMCID: PMC4892319",
+            "page": "143-158",
+            "title": "Neurofeedback: A comprehensive review on system design, methodology and clinical applications",
+            "title-short": "Neurofeedback",
+            "type": "article-journal",
+            "volume": "7"
+        },
+        {
+            "DOI": "10.1145/2468356.2479588",
+            "URL": "https://doi.org/10.1145/2468356.2479588",
+            "author": [
+                {
+                    "family": "Long",
+                    "given": "Kiel"
+                },
+                {
+                    "family": "Vines",
+                    "given": "John"
+                }
+            ],
+            "collection-title": "CHI EA ’13",
+            "id": "long2013",
+            "issued": {
+                "date-parts": [
+                    [
+                        2013,
+                        4,
+                        27
+                    ]
+                ]
+            },
+            "page": "29752978",
+            "publisher": "Association for Computing Machinery",
+            "publisher-place": "New York, NY, USA",
+            "title": "Mind pool: Encouraging self-reflection through ambiguous bio-feedback",
+            "title-short": "Mind pool",
+            "type": "paper-conference"
+        },
+        {
+            "URL": "https://www.youtube.com/watch?v=SvwTqnI3f4U",
+            "author": [
+                {
+                    "family": "Laura Jade"
+                }
+            ],
+            "id": "laurajade2015",
+            "issued": {
+                "date-parts": [
+                    [
+                        2015,
+                        6,
+                        4
+                    ]
+                ]
+            },
+            "note": "Directors: _:n249",
+            "title": "INTERACTIVE BRAIN LIGHT illuminated by brainwaves",
+            "type": "article-journal"
+        },
+        {
+            "URL": "https://www.vice.com/en/article/gvwvb3/can-brain-scans-reveal-your-ideal-self-image",
+            "author": [
+                {
+                    "family": "Mufson",
+                    "given": "Beckett"
+                }
+            ],
+            "id": "mufson2014",
+            "issued": {
+                "date-parts": [
+                    [
+                        2014,
+                        9,
+                        30
+                    ]
+                ]
+            },
+            "language": "en",
+            "title": "Can Brain Scans Reveal Your Ideal Self-Image?",
+            "type": ""
         }
     ],
     "project_biblios": [

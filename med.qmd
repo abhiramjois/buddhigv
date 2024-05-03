@@ -1,0 +1,17 @@
+# Medical applications of EEG
+
+## EEG as a diagnostic tool
+
+EEG is the most commonly practices diagnostic procedure to confirm epilepsy. Given the low to moderate sensitivity, a routine EEG (typically with a duration of 20–30 minutes) can be normal in people that have epilepsy. When an EEG shows sharp waves, spikes etc, it is confirmatory of epilepsy in nearly all cases. It could also help in the diagnosis of brain tumor, brain damage from head injury, brain dysfunction etc
+
+![Image credits: Natalia Espinosa](images/Epileptic-Seizure-EEG-vs-Normal-EEG.jpg)
+
+## EEG in Neurofeedback therapy
+
+Neurofeedback (NFB) is a branch of biofeedback in which participants can visualize their brain activity and try and regulate it to reach an optimal state. Neurofeedback is a non-invasive method that assists subjects to control their brain waves consciously. It is often done through simple games and activities. Electroencephalography (EEG) signals are recorded during neurofeedback and its various components based on frequencies are extracted and visualized to create a feedback loop.
+
+There exist various neurofeedback treatment protocols i.e. alpha, beta, alpha/theta, delta, gamma, and theta, the protocol is decided based on the patient’s specific case requirements. Different EEG electrode placements also exist i.e. standard recording channels in the frontal, temporal, central, and occipital lobes.
+
+There are multiple implications of NFB therapy i.e. treatment of attention deficit hyperactivity disorder, anxiety, depression, epilepsy, insomnia, drug addiction, schizophrenia, learning disabilities, dyslexia and dyscalculia, autistic spectrum disorders and so on as well as other applications such as pain management, and the improvement of musical and athletic performance. [@marzbani2016]
+
+{{< video https://www.youtube.com/watch?v=-OTTenzRqR8 >}}

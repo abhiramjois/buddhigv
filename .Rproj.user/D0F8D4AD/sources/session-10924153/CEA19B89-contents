@@ -75,3 +75,54 @@
 	url = {https://source.wustl.edu/2006/10/teenager-moves-video-icons-just-by-imagination/},
 	langid = {canadian}
 }
+
+@article{marzbani2016,
+	title = {Neurofeedback: A Comprehensive Review on System Design, Methodology and Clinical Applications},
+	author = {Marzbani, Hengameh and Marateb, Hamid Reza and Mansourian, Marjan},
+	year = {2016},
+	month = {04},
+	date = {2016-04},
+	journal = {Basic and Clinical Neuroscience},
+	pages = {143--158},
+	volume = {7},
+	number = {2},
+	doi = {10.15412/J.BCN.03070208},
+	url = {https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4892319/},
+	note = {Number: 2
+PMID: 27303609
+PMCID: PMC4892319}
+}
+
+@inproceedings{long2013,
+	title = {Mind pool: encouraging self-reflection through ambiguous bio-feedback},
+	author = {Long, Kiel and Vines, John},
+	year = {2013},
+	month = {04},
+	date = {2013-04-27},
+	publisher = {Association for Computing Machinery},
+	pages = {2975{\textendash}2978},
+	series = {CHI EA '13},
+	doi = {10.1145/2468356.2479588},
+	url = {https://doi.org/10.1145/2468356.2479588},
+	address = {New York, NY, USA}
+}
+
+@article{laurajade2015,
+	title = {INTERACTIVE BRAIN LIGHT illuminated by brainwaves},
+	author = {Laura Jade, },
+	year = {2015},
+	month = {06},
+	date = {2015-06-04},
+	url = {https://www.youtube.com/watch?v=SvwTqnI3f4U},
+	note = {Directors: {\_}:n249}
+}
+
+@misc{mufson2014,
+	title = {Can Brain Scans Reveal Your Ideal Self-Image?},
+	author = {Mufson, Beckett},
+	year = {2014},
+	month = {09},
+	date = {2014-09-30},
+	url = {https://www.vice.com/en/article/gvwvb3/can-brain-scans-reveal-your-ideal-self-image},
+	langid = {en}
+}

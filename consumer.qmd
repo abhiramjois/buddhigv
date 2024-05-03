@@ -1,0 +1,46 @@
+# Consumer Applications of EEG
+
+Consumer grade plug and play Bluetooth EEG headsets are available across different countries. Popular manufacturers include EMOTIV, Neurosky, Muse, OpenBCI etc. The cost of these devices range from \$20 to \$99,000
+
+A comprehensive list of famous BCI hardware, can be found here:
+
+```{=html}
+<iframe width=100% height=20% src="https://bciwiki.org/index.php/Category:Hardware" title="WBCI Hardware"></iframe>
+```
+## EEG devices in India
+
+The market for EEG devices in India is still very nacent. Most manufacturers do not deliver to India. Although, there are new companies with EEG products that are gaining popularity.
+
+### [UpsideDownLabs](https://upsidedownlabs.tech/)
+
+UpsideDownLabs is a company aimed at making Do-It-Yourself (DIY) Neuroscience affordable and accessible to all so that students and researchers can make innovative projects in Brain-Computer Interface (BCI) and Human-Computer Interface (HCI) at ease. They mainly sell sensors, electrodes and kits with Arduinos to experiment with.
+
+Popular products:
+
+-   [BIOAMP EXG Pill](https://store.upsidedownlabs.tech/product/bioamp-exg-pill/)
+
+-   [DIY Neuroscience Kit](https://store.upsidedownlabs.tech/product/diy-neuroscience-kit-pro/)
+
+-   [Muscle BIOAMP candy](https://store.upsidedownlabs.tech/product/muscle-bioamp-candy/)
+
+{{< video https://www.youtube.com/watch?v=4IGVcofhE30 >}}
+
+### [Nema AI](https://nemaai.com/)
+
+NEMA AI is a startup based in India that uses neuroscience and artificial intelligence (AI) to provide solutions for education, employability, and marketing. NEMA AI is a service provider. They utilize Emotiv brand's 5 or 14 channel EEG headsets in a concise 5-minute session, capturing users' brain patterns. Following the scan, users receive counseling and career guidance, elucidating effective measures for progress and goal achievement.
+
+{{< video https://www.youtube.com/watch?v=OCL164onwvI&pp=ygUSbmVtYSBhaSBzaGFyayB0YW5r >}}
+
+### [Neuphony](https://neuphony.com/)
+
+Neuphony empowers individuals to train and reinforce desired brain activity through biofeedback using EEG technology. By offering real-time data feedback, Neuphony enables users to understand and optimise their practises and routines.
+
+Neuphony is an Indian brand that sells EEG headsets along with their mobile app. With real time data from the headset, one can take up different neurofeedback and brain training sessions on their app to imrove brain health.
+
+-   [Neuphony - Wearable EEG headband for Brain health](https://neuphony.com/brain-wearables/eeg-headband/)
+
+-   [Neuphony - EXG Synapse Open Source Kit](https://neuphony.com/diy-neuroscience-kits/exg-synapse/)
+
+-   [Neuphony - Mobile Application](https://neuphony.com/softwares/mobile-application/)
+
+{{< video https://www.youtube.com/watch?v=qJacs2gy3Ds >}}

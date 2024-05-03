@@ -16,5 +16,14 @@
   },
   "non_invasive_eeg.qmd": {
     "non_invasive_eeg.html": "99f6e761"
+  },
+  "med.qmd": {
+    "med.html": "52b98bcd"
+  },
+  "consumer.qmd": {
+    "consumer.html": "1d219ae9"
+  },
+  "art.qmd": {
+    "art.html": "89ff9a0c"
   }
 }

@@ -4,14 +4,16 @@ project:
 book:
   title: "Buddhi GV"
   subtitle: "Democratizing Brain Computer Interfaces to foster curiosity. experimentation and speculation"
-  author: "Abhiram Jois"
-  cover-image: /images/bgv.png
+  #cover-image: images/cover.jpg
   chapters: 
     - index.qmd
     - part: "Curiosity"
       chapters:
         - bci.qmd
         - non_invasive_eeg.qmd
+        - med.qmd
+        - consumer.qmd
+        - art.qmd
     - part: "Experimentation"
       chapters:  
         - intro.qmd
@@ -27,7 +29,7 @@ format:
   html:
     title-block-style: none
     bread-crumbs: false 
-    theme: journal
+    theme: cyborg
     number-sections: false
     
   pdf:
