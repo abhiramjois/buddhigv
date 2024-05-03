@@ -1,0 +1,20 @@
+{
+  "index.qmd": {
+    "index.html": "67c85477"
+  },
+  "intro.qmd": {
+    "intro.html": "384665f3"
+  },
+  "summary.qmd": {
+    "summary.html": "bdf0b9cf"
+  },
+  "references.qmd": {
+    "references.html": "435ba53d"
+  },
+  "bci.qmd": {
+    "bci.html": "981ff067"
+  },
+  "non_invasive_eeg.qmd": {
+    "non_invasive_eeg.html": "99f6e761"
+  }
+}
