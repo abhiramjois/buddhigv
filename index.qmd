@@ -1,4 +1,4 @@
-![](images/[removal.ai]_162b22c6-11a8-4ac1-9036-2dadecac939a-title.png){width="100%"}
+![](images/%5Bremoval.ai%5D_162b22c6-11a8-4ac1-9036-2dadecac939a-title.png){fig-align="center" width="70%"}
 
 # Buddhi GV
 
@@ -7,7 +7,6 @@
 <br>
 <br>
 ```
-
 The project aims to democratize access and understanding of BCI (Brain-Computer Interfaces), particularly non-invasive EEG devices. This website is curated as a supporting repository to a conceptual kiosk proposed to be set up in NIMHANS Museum or other public spaces.
 
 The main objective is to compile useful information and resources around the theme of Brain computer interfaces to foster curiosity, experimentation and speculation.
@@ -17,31 +16,29 @@ If you are someone who engages with BCI and non-invasive EEG devices of any kind
 ```{=html}
     <a href="bci.html" style="text-decoration: none; display: block; width: 100%; margin-bottom: 20px;">
         <div style="color:white; cursor: pointer; display: flex; align-items: flex-start; flex-direction: row;" onmouseover="this.style.backgroundColor='#f0f0f0'; this.style.color='black'" onmouseout="this.style.backgroundColor='inherit'; this.style.color='white'">
-            <img src="images/curiosity.jpeg" alt="Image 1" style="width: 15rem; height: auto; margin-right: 20px; margin-x: auto">
+            <img src="images/curiosity.jpeg" alt="Image 1" style="width: 250px; height: 200px; margin-right: 20px; margin-x: auto">
             <div styel="width:60%">
                 <h2 style="color: inherit;">Curiosity</h2>
                 <p style="color: inherit;">What are brain computer interfaces? Where are they used? What is possible with BCI today?</p>
             </div>
         </div>
     </a>
-```    
-
-```{=html}    
+```
+```{=html}
     <a href="bci.html" style="text-decoration: none; display: block; width: 100%; margin-bottom: 20px;">
         <div style="color:white; cursor: pointer; display: flex; align-items: flex-start; flex-direction: row;" onmouseover="this.style.backgroundColor='#f0f0f0'; this.style.color='black'" onmouseout="this.style.backgroundColor='inherit'; this.style.color='white'">
-            <img src="images/experiment.jpeg" alt="Image 1" style="width: 15rem; height: auto; margin-right: 20px;">
+            <img src="images/experiment.jpeg" alt="Image 1" style="width: 250px; height: 200px; margin-right: 20px;">
             <div styel="width:60%">
                 <h2 style="color: inherit;">Experimentation</h2>
                 <p style="color: inherit;">What can you do with the tech available today? Visualize electrical activity in the brain and record EEG</p>
             </div>
         </div>
     </a>
-```    
-
-```{=html}    
+```
+```{=html}
     <a href="bci.html" style="text-decoration: none; display: block; width: 100%;">
         <div style="color:white; cursor: pointer; display: flex; align-items: flex-start; flex-direction: row;" onmouseover="this.style.backgroundColor='#f0f0f0'; this.style.color='black'" onmouseout="this.style.backgroundColor='inherit'; this.style.color='white'">
-            <img src="images/speculate.jpeg" alt="Image 1" style="width: 15rem; height: auto; margin-right: 20px;">
+            <img src="images/speculate.jpeg" alt="Image 1" style="width: 250px; height: 200px; margin-right: 20px;">
             <div styel="width:60%">
                 <h2 style="color: inherit;">Speculation</h2>
                 <p style="color: inherit;">What is the future of widespread EEG devices? Are you different from your brain? How much of it can you control?</p>
