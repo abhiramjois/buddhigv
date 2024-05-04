@@ -5,6 +5,7 @@ book:
   title: "Buddhi GV"
   subtitle: "Democratizing Brain Computer Interfaces to foster curiosity. experimentation and speculation"
   #cover-image: images/cover.jpg
+  favicon: images/bgv.png
   chapters: 
     - index.qmd
     - part: "Curiosity"
