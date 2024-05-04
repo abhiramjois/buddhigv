@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Introduction to BCI</title>
+<title>Connecting the setup to the Spike Recorder app</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -50,8 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./non_invasive_eeg.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./brbay.html" rel="next">
+<link href="./record.html" rel="prev">
 <link href="./images/bgv.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -102,7 +82,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./bci.html">Curiosity</a></li><li class="breadcrumb-item"><a href="./bci.html"><span class="chapter-title">Introduction to BCI</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./record.html">Experimentation</a></li><li class="breadcrumb-item"><a href="./byb.html"><span class="chapter-title">Connecting the setup to the Spike Recorder app</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -138,7 +118,7 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./bci.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Introduction to BCI</span></a>
+  <a href="./bci.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to BCI</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -179,7 +159,7 @@ div.csl-indent {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./byb.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Connecting the setup to the Spike Recorder app</span></a>
+  <a href="./byb.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Connecting the setup to the Spike Recorder app</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -221,9 +201,11 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#invasive-bcis" id="toc-invasive-bcis" class="nav-link active" data-scroll-target="#invasive-bcis">Invasive BCIs</a></li>
-  <li><a href="#partially-invasive-bci" id="toc-partially-invasive-bci" class="nav-link" data-scroll-target="#partially-invasive-bci">Partially invasive BCI</a></li>
-  <li><a href="#non-invasive-bci" id="toc-non-invasive-bci" class="nav-link" data-scroll-target="#non-invasive-bci">Non Invasive BCI</a></li>
+  <li><a href="#install-backyard-brains---spike-recorder-app" id="toc-install-backyard-brains---spike-recorder-app" class="nav-link active" data-scroll-target="#install-backyard-brains---spike-recorder-app">Install Backyard Brains - Spike Recorder app</a></li>
+  <li><a href="#arduino-script" id="toc-arduino-script" class="nav-link" data-scroll-target="#arduino-script">Arduino script</a></li>
+  <li><a href="#spike-recorder-app-configurations" id="toc-spike-recorder-app-configurations" class="nav-link" data-scroll-target="#spike-recorder-app-configurations">Spike Recorder app configurations</a></li>
+  <li><a href="#fft-as-an-indicator-of-clean-data" id="toc-fft-as-an-indicator-of-clean-data" class="nav-link" data-scroll-target="#fft-as-an-indicator-of-clean-data">FFT as an indicator of clean data</a></li>
+  <li><a href="#eyes-open-vs-eyes-closed-states" id="toc-eyes-open-vs-eyes-closed-states" class="nav-link" data-scroll-target="#eyes-open-vs-eyes-closed-states">Eyes open vs Eyes closed states</a></li>
   </ul>
 </nav>
     </div>
@@ -231,45 +213,68 @@ div.csl-indent {
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header">
-<h1 class="title display-7"><span class="chapter-title">Introduction to BCI</span></h1>
+<h1 class="title display-7"><span class="chapter-title">Connecting the setup to the Spike Recorder app</span></h1>
 
 </header>
 
 
-<p>BCI stands for Brain Computer interfaces. BCIs are devices that let the human brain communicate with and control external software or hardware. It is a communication pathway between the brain’s electrical activity and an external device, in this case a computer.</p>
-<p>BCIs are primarily of three kinds - invasive, partially invasive, non-invasive.</p>
+<p>In this experiment, we will look at how to connect the BioAmp EXG Pill and Arduino that we setup to the Spike recorder app. Spike recorder is a tool that helps visualize bio potential signals. It also comes with helpful tools like FFT graphs, frequency filters etc</p>
+<section id="install-backyard-brains---spike-recorder-app" class="level2">
+<h2 class="anchored" data-anchor-id="install-backyard-brains---spike-recorder-app">Install Backyard Brains - Spike Recorder app</h2>
+<p>The first step in this process is to install the backyard brains spike recorder app. You can find the link for the installation <a href="https://backyardbrains.com/products/spikerecorder">here</a></p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="images/65cd1a545634de6df4638f0e_6279ab07c6628c70c87853b8_WKwprEdZXs6z8tzbspUAF13_Kd1uMTjgOoUkj6JFHHzsvWTUbYqQ14ngYRgLn7moghtgD3BgTkdVztJxo7MyeEx3crcEsfs6pRA3GxlSooLQMma_ewcmbvapPqCwSFd0Ae59e0EebQRL1-Ql3w.png" class="img-fluid figure-img"></p>
-<figcaption>Image source: https://www.paradromics.com/blog/enabling-connection-ii-bci-for-assistive-communication</figcaption>
+<p><img src="images/clipboard-1284036578.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
 </figure>
 </div>
-<section id="invasive-bcis" class="level3">
-<h3 class="anchored" data-anchor-id="invasive-bcis">Invasive BCIs</h3>
-<p>A brain computer interface is said to be invasive if it involves surgery to implant micro electrodes under the scalp. They are implanted directly into the grey matter of the brain and produce the highest quality signals.</p>
-<p>The earliest examples of invasive BCIs have been in the field of artificial vision and motor neuroprosthetics. Direct brain implants have been used to treat acquired blindness. One of the first scientists to produce a working brain interface to restore sight was private researcher William Dobelle <span class="citation" data-cites="kotler">(<a href="references.html#ref-kotler" role="doc-biblioref">Kotler, n.d.</a>)</span> Researchers at Emroy University in Atlanta were the first to install a brain implant strong enough to simulate movement <span class="citation" data-cites="kennedy1998">(<a href="references.html#ref-kennedy1998" role="doc-biblioref">Kennedy and Bakay 1998</a>)</span></p>
 </section>
-<section id="partially-invasive-bci" class="level3">
-<h3 class="anchored" data-anchor-id="partially-invasive-bci">Partially invasive BCI</h3>
-<p>These are brain computer interfaces that are implanted into the skull but rest outside the brain and not inside the grey matter. The most popular example of partially invasive BCI is ECoG.</p>
-<p>ECoG stands for Electrocorticography. ECoG measures electrical activity of the brain from beneath the skull. The earliest trials for ECoG were done in the Washington University in St.&nbsp;Louis, one of the experiments enables a participant to play the game Space Invaders using his ECoG implant <span class="citation" data-cites="lutz2006">(<a href="references.html#ref-lutz2006" role="doc-biblioref">Lutz 2006</a>)</span></p>
+<section id="arduino-script" class="level2">
+<h2 class="anchored" data-anchor-id="arduino-script">Arduino script</h2>
+<p>Once the app is installed, you will need an Arduino script to communicate with the app through a serial port. I used the script provided by Backyard Brain itself. The script was written to connect their Muscle SpikerShield product, but the same script works with the Bio Amp EXG Pill as well.</p>
+<p>The code for this script can be found here. Run this script and upload it to the Arduino board. Make sure you remember the serial port the Arduino transmits data to. In the case of my Windows laptop, it was COM14.</p>
+<p><img src="images/clipboard-2071281161.png" class="img-fluid"></p>
 </section>
-<section id="non-invasive-bci" class="level3">
-<h3 class="anchored" data-anchor-id="non-invasive-bci">Non Invasive BCI</h3>
-<p>These are brain computer interfaces that do not require surgery or implants of any kind. They are predominantly EEG (Electroencephalography) devices. These interfaces are easier to wear. However they have poor spacial resolution and the skull dampens some signals. Additionally EEG devices require time and effort to get useful signals and readable electrical activity prior every session.</p>
+<section id="spike-recorder-app-configurations" class="level2">
+<h2 class="anchored" data-anchor-id="spike-recorder-app-configurations">Spike Recorder app configurations</h2>
+<p>Open the Spike Recorder app. As soon as you open the app, you will see waves on the screen. These are not your EEG waves yet but sound waves being picked up from the speaker by default. To start visualizing EEG waves you will need to configure the app to read from the serial port.</p>
+<ul>
+<li><p>Click on the settings button on the top-left corner</p></li>
+<li><p>Set the band pass filter between 1 and 40</p></li>
+<li><p>You can optionally set a notch filter</p></li>
+</ul>
+<p><img src="images/clipboard-1531367267.png" class="img-fluid"></p>
+<p>As soon as you start reading the EEG data it is very likely that you will see something like the image given below. The waves here are too large on the y axis and the filter that you set could most likely be reset.</p>
+<p><img src="images/clipboard-531262790.png" class="img-fluid"></p>
+<p>There are two ways to fix this.</p>
+<ul>
+<li><p>Adjust the zoom level on the y axis using the + and - buttons. In this case, you will need to make it smaller</p></li>
+<li><p>Reconfigure the bandpass filter between 1 to 40. Even if you did this step before, check if it has been implemented</p></li>
+</ul>
+<p>Once these two steps are done, you wave should look something like this:</p>
+<p><img src="images/clipboard-1600982436.png" class="img-fluid"></p>
+<p>These are better representation of your EEG readings. To make sense of brain activity and what is actually happening, we will need to use an FFT graph. An FFT graph stands for Fast Fourier Transform graph and they show which frequencies are present in a vibration during a certain period of time. To enable the FFT graph click on the FFT button in the top left corner.</p>
+<p><img src="images/clipboard-1062802552.png" class="img-fluid"></p>
+<p>The FFT graph below shows you what frequencies are most recurring in the given time. Since we have filtered in brain waves between 1 to 40 hz. You can see which region has more brain activity.</p>
+</section>
+<section id="fft-as-an-indicator-of-clean-data" class="level2">
+<h2 class="anchored" data-anchor-id="fft-as-an-indicator-of-clean-data">FFT as an indicator of clean data</h2>
+<p><img src="images/clipboard-3912656479.png" class="img-fluid"></p>
+<p>The blue on the graph is an indication that the setup is fine and there is no unwanted noise being picked up. The more blue the graph the clearer the data. Every time there is significant brain activity, it can be seen through green strips on the graph. So ideally a good FFT should have predominantly blue strip with hints of green.</p>
+<p><img src="images/clipboard-366686405.png" class="img-fluid"></p>
+<p>If your graph looks something like the one given above, with blues and strong greens. You have an intermediate state, where the electrical activity is being recorded by there is still some noise. You will need little readjustments to get a clean graph</p>
+<p><img src="images/clipboard-924868132.png" class="img-fluid"></p>
+<p>If your graph looks like something given above with a lot of yellow and reds it means that the sensor is picking up a lot of noise and you will to readjust the electrodes, apply more gel, look foe external noise like electric appliances etc.</p>
+<p>Do not worry if your graph looks like this for the fist few minutes of your session, it is a very common occurrence as the sensors are very sensitive</p>
+</section>
+<section id="eyes-open-vs-eyes-closed-states" class="level2">
+<h2 class="anchored" data-anchor-id="eyes-open-vs-eyes-closed-states">Eyes open vs Eyes closed states</h2>
+<p>Since we are recording brain waves from the visual cortex. You can clearly visualize the difference between eyes open and eyes closed states.</p>
+<p>Eyes open has lesser brain activity and the waves have a smaller amplitude</p>
+<p><img src="images/Screenshot (262).png" class="img-fluid"></p>
+<p>Eyes closed has more brain activity especially between 8 to 20 hz range. This indicate the production of Alpha waves and beta waves. Alpha waves are produced when the brain is relaxed, and beta waves when the brain is focused.</p>
+<p><img src="images/Screenshot (239).png" class="img-fluid"></p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-kennedy1998" class="csl-entry" role="listitem">
-Kennedy, P. R., and R. a. E. Bakay. 1998. <span>“Restoration of Neural Output from a Paralyzed Patient by a Direct Brain Connection.”</span> <em>NeuroReport</em> 9 (8): 1707. <a href="https://journals.lww.com/neuroreport/abstract/1998/06010/restoration_of_neural_output_from_a_paralyzed.7.aspx">https://journals.lww.com/neuroreport/abstract/1998/06010/restoration_of_neural_output_from_a_paralyzed.7.aspx</a>.
-</div>
-<div id="ref-kotler" class="csl-entry" role="listitem">
-Kotler, Steven. n.d. <span>“Vision Quest.”</span> <em>Wired</em>. <a href="https://www.wired.com/2002/09/vision/">https://www.wired.com/2002/09/vision/</a>.
-</div>
-<div id="ref-lutz2006" class="csl-entry" role="listitem">
-Lutz, Diana. 2006. <span>“Teenager Moves Video Icons Just by Imagination - the Source - Washington University in St. Louis.”</span> <a href="https://source.wustl.edu/2006/10/teenager-moves-video-icons-just-by-imagination/">https://source.wustl.edu/2006/10/teenager-moves-video-icons-just-by-imagination/</a>.
-</div>
-</div>
 </section>
 
 </main> <!-- /main -->
@@ -684,13 +689,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Buddhi GV">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Buddhi GV</span></span>
+      <a href="./record.html" class="pagination-link" aria-label="Setup to record EEG from the visual cortex">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Setup to record EEG from the visual cortex</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./non_invasive_eeg.html" class="pagination-link" aria-label="Non Invasive EEG">
-        <span class="nav-page-text"><span class="chapter-title">Non Invasive EEG</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./brbay.html" class="pagination-link" aria-label="BrainBay - A visual programming language">
+        <span class="nav-page-text"><span class="chapter-title">BrainBay - A visual programming language</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

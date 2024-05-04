@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Introduction to BCI</title>
+<title>Setup to record EEG from the visual cortex</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,27 +20,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-  margin-bottom: 0em;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -50,8 +30,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./non_invasive_eeg.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./byb.html" rel="next">
+<link href="./art.html" rel="prev">
 <link href="./images/bgv.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -102,7 +82,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./bci.html">Curiosity</a></li><li class="breadcrumb-item"><a href="./bci.html"><span class="chapter-title">Introduction to BCI</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./record.html">Experimentation</a></li><li class="breadcrumb-item"><a href="./record.html"><span class="chapter-title">Setup to record EEG from the visual cortex</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -138,7 +118,7 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./bci.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Introduction to BCI</span></a>
+  <a href="./bci.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Introduction to BCI</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -174,7 +154,7 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./record.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Setup to record EEG from the visual cortex</span></a>
+  <a href="./record.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Setup to record EEG from the visual cortex</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -221,9 +201,10 @@ div.csl-indent {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#invasive-bcis" id="toc-invasive-bcis" class="nav-link active" data-scroll-target="#invasive-bcis">Invasive BCIs</a></li>
-  <li><a href="#partially-invasive-bci" id="toc-partially-invasive-bci" class="nav-link" data-scroll-target="#partially-invasive-bci">Partially invasive BCI</a></li>
-  <li><a href="#non-invasive-bci" id="toc-non-invasive-bci" class="nav-link" data-scroll-target="#non-invasive-bci">Non Invasive BCI</a></li>
+  <li><a href="#materials-required" id="toc-materials-required" class="nav-link active" data-scroll-target="#materials-required">Materials Required</a></li>
+  <li><a href="#assembling-the-circuit" id="toc-assembling-the-circuit" class="nav-link" data-scroll-target="#assembling-the-circuit">Assembling the circuit</a></li>
+  <li><a href="#placing-the-electrodes-on-the-scalp" id="toc-placing-the-electrodes-on-the-scalp" class="nav-link" data-scroll-target="#placing-the-electrodes-on-the-scalp">Placing the electrodes on the scalp</a></li>
+  <li><a href="#things-that-might-help" id="toc-things-that-might-help" class="nav-link" data-scroll-target="#things-that-might-help">Things that might help</a></li>
   </ul>
 </nav>
     </div>
@@ -231,45 +212,48 @@ div.csl-indent {
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header">
-<h1 class="title display-7"><span class="chapter-title">Introduction to BCI</span></h1>
+<h1 class="title display-7"><span class="chapter-title">Setup to record EEG from the visual cortex</span></h1>
 
 </header>
 
 
-<p>BCI stands for Brain Computer interfaces. BCIs are devices that let the human brain communicate with and control external software or hardware. It is a communication pathway between the brain’s electrical activity and an external device, in this case a computer.</p>
-<p>BCIs are primarily of three kinds - invasive, partially invasive, non-invasive.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/65cd1a545634de6df4638f0e_6279ab07c6628c70c87853b8_WKwprEdZXs6z8tzbspUAF13_Kd1uMTjgOoUkj6JFHHzsvWTUbYqQ14ngYRgLn7moghtgD3BgTkdVztJxo7MyeEx3crcEsfs6pRA3GxlSooLQMma_ewcmbvapPqCwSFd0Ae59e0EebQRL1-Ql3w.png" class="img-fluid figure-img"></p>
-<figcaption>Image source: https://www.paradromics.com/blog/enabling-connection-ii-bci-for-assistive-communication</figcaption>
-</figure>
-</div>
-<section id="invasive-bcis" class="level3">
-<h3 class="anchored" data-anchor-id="invasive-bcis">Invasive BCIs</h3>
-<p>A brain computer interface is said to be invasive if it involves surgery to implant micro electrodes under the scalp. They are implanted directly into the grey matter of the brain and produce the highest quality signals.</p>
-<p>The earliest examples of invasive BCIs have been in the field of artificial vision and motor neuroprosthetics. Direct brain implants have been used to treat acquired blindness. One of the first scientists to produce a working brain interface to restore sight was private researcher William Dobelle <span class="citation" data-cites="kotler">(<a href="references.html#ref-kotler" role="doc-biblioref">Kotler, n.d.</a>)</span> Researchers at Emroy University in Atlanta were the first to install a brain implant strong enough to simulate movement <span class="citation" data-cites="kennedy1998">(<a href="references.html#ref-kennedy1998" role="doc-biblioref">Kennedy and Bakay 1998</a>)</span></p>
+<section id="materials-required" class="level2">
+<h2 class="anchored" data-anchor-id="materials-required">Materials Required</h2>
+<ul>
+<li><p>Bio Amp EXG Pill (soldered)</p></li>
+<li><p>Gel electrode patches</p></li>
+<li><p>Electrode headband</p></li>
+<li><p>Conductive gel</p></li>
+<li><p>Arduino and connector cable</p></li>
+<li><p>Jumper wires</p></li>
+<li><p>Laptop</p></li>
+</ul>
 </section>
-<section id="partially-invasive-bci" class="level3">
-<h3 class="anchored" data-anchor-id="partially-invasive-bci">Partially invasive BCI</h3>
-<p>These are brain computer interfaces that are implanted into the skull but rest outside the brain and not inside the grey matter. The most popular example of partially invasive BCI is ECoG.</p>
-<p>ECoG stands for Electrocorticography. ECoG measures electrical activity of the brain from beneath the skull. The earliest trials for ECoG were done in the Washington University in St.&nbsp;Louis, one of the experiments enables a participant to play the game Space Invaders using his ECoG implant <span class="citation" data-cites="lutz2006">(<a href="references.html#ref-lutz2006" role="doc-biblioref">Lutz 2006</a>)</span></p>
+<section id="assembling-the-circuit" class="level2">
+<h2 class="anchored" data-anchor-id="assembling-the-circuit">Assembling the circuit</h2>
+<p>The BIOAMP EXG Pill is connected to an Arduino board one end using jumper wires and to the electrodes on the other end. Connect the Arduino to a laptop.</p>
+<p><img src="images/clipboard-853366779.png" class="img-fluid"></p>
+<p>The positive and negative wires are connected to the band and the ground wire is connected to a gel electrode.</p>
+<p><img src="images/clipboard-4134519690.png" class="img-fluid"></p>
 </section>
-<section id="non-invasive-bci" class="level3">
-<h3 class="anchored" data-anchor-id="non-invasive-bci">Non Invasive BCI</h3>
-<p>These are brain computer interfaces that do not require surgery or implants of any kind. They are predominantly EEG (Electroencephalography) devices. These interfaces are easier to wear. However they have poor spacial resolution and the skull dampens some signals. Additionally EEG devices require time and effort to get useful signals and readable electrical activity prior every session.</p>
+<section id="placing-the-electrodes-on-the-scalp" class="level2">
+<h2 class="anchored" data-anchor-id="placing-the-electrodes-on-the-scalp">Placing the electrodes on the scalp</h2>
+<p>The band needs to be worn by the user, tightly enough so that there is not gap between the electrodes and the scalp. The band needs to worn in such a way that it is touching the scalp directly. Apply some conductive gel on both electrodes to improve the signal reading.</p>
+<p><img src="images/clipboard-2783055425.png" class="img-fluid"></p>
+<p>The placement of the positive and negative electrodes must be on the back of the head. I have tried multiple placements, I have gotten clean results when the electrodes are placed behind the head slightly above the ear. Place the ground electrode with the gel electrode patch behind the participants right ear.</p>
+<p><img src="images/clipboard-1512373558.png" class="img-fluid"></p>
+</section>
+<section id="things-that-might-help" class="level2">
+<h2 class="anchored" data-anchor-id="things-that-might-help">Things that might help</h2>
+<ul>
+<li><p>There must be no switched on electrical appliances or AC current devices very close to the sensor. This includes charging your laptop, connecting HDMI to an external monitor etc.</p></li>
+<li><p>The users needs to sit stable and minimize movement as much as possible. Any movements like eyebrow movements, eye blinks etc will cause interference in the signal</p></li>
+<li><p>It will take 5 to 10 minutes to get the user and the interface adjusted to each other. Until then feel free to try out different positions and placements. Feel free to add the conductive gel once again while readjusting the placement of the electrodes. It might take some trial and error to get clean readings.</p></li>
+<li><p>Once the session is done, it is advisable for users to wash their hair. Wash the band and the + and - electrodes once you are done. Prolonged exposure to the gel might corrode the electrode.</p></li>
+</ul>
+<p><img src="images/clipboard-2267831741.png" class="img-fluid"></p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
-<div id="ref-kennedy1998" class="csl-entry" role="listitem">
-Kennedy, P. R., and R. a. E. Bakay. 1998. <span>“Restoration of Neural Output from a Paralyzed Patient by a Direct Brain Connection.”</span> <em>NeuroReport</em> 9 (8): 1707. <a href="https://journals.lww.com/neuroreport/abstract/1998/06010/restoration_of_neural_output_from_a_paralyzed.7.aspx">https://journals.lww.com/neuroreport/abstract/1998/06010/restoration_of_neural_output_from_a_paralyzed.7.aspx</a>.
-</div>
-<div id="ref-kotler" class="csl-entry" role="listitem">
-Kotler, Steven. n.d. <span>“Vision Quest.”</span> <em>Wired</em>. <a href="https://www.wired.com/2002/09/vision/">https://www.wired.com/2002/09/vision/</a>.
-</div>
-<div id="ref-lutz2006" class="csl-entry" role="listitem">
-Lutz, Diana. 2006. <span>“Teenager Moves Video Icons Just by Imagination - the Source - Washington University in St. Louis.”</span> <a href="https://source.wustl.edu/2006/10/teenager-moves-video-icons-just-by-imagination/">https://source.wustl.edu/2006/10/teenager-moves-video-icons-just-by-imagination/</a>.
-</div>
-</div>
 </section>
 
 </main> <!-- /main -->
@@ -684,13 +668,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Buddhi GV">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Buddhi GV</span></span>
+      <a href="./art.html" class="pagination-link" aria-label="EEG in Art and Performance">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">EEG in Art and Performance</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./non_invasive_eeg.html" class="pagination-link" aria-label="Non Invasive EEG">
-        <span class="nav-page-text"><span class="chapter-title">Non Invasive EEG</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./byb.html" class="pagination-link" aria-label="Connecting the setup to the Spike Recorder app">
+        <span class="nav-page-text"><span class="chapter-title">Connecting the setup to the Spike Recorder app</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

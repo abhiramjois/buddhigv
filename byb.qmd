@@ -1,0 +1,77 @@
+# Connecting the setup to the Spike Recorder app
+
+In this experiment, we will look at how to connect the BioAmp EXG Pill and Arduino that we setup to the Spike recorder app. Spike recorder is a tool that helps visualize bio potential signals. It also comes with helpful tools like FFT graphs, frequency filters etc
+
+## Install Backyard Brains - Spike Recorder app
+
+The first step in this process is to install the backyard brains spike recorder app. You can find the link for the installation [here](https://backyardbrains.com/products/spikerecorder)
+
+![](images/clipboard-1284036578.png){fig-align="center"}
+
+## Arduino script
+
+Once the app is installed, you will need an Arduino script to communicate with the app through a serial port. I used the script provided by Backyard Brain itself. The script was written to connect their Muscle SpikerShield product, but the same script works with the Bio Amp EXG Pill as well.
+
+The code for this script can be found here. Run this script and upload it to the Arduino board. Make sure you remember the serial port the Arduino transmits data to. In the case of my Windows laptop, it was COM14.
+
+![](images/clipboard-2071281161.png)
+
+## Spike Recorder app configurations
+
+Open the Spike Recorder app. As soon as you open the app, you will see waves on the screen. These are not your EEG waves yet but sound waves being picked up from the speaker by default. To start visualizing EEG waves you will need to configure the app to read from the serial port.
+
+-   Click on the settings button on the top-left corner
+
+-   Set the band pass filter between 1 and 40
+
+-   You can optionally set a notch filter
+
+![](images/clipboard-1531367267.png)
+
+As soon as you start reading the EEG data it is very likely that you will see something like the image given below. The waves here are too large on the y axis and the filter that you set could most likely be reset.
+
+![](images/clipboard-531262790.png)
+
+There are two ways to fix this.
+
+-   Adjust the zoom level on the y axis using the + and - buttons. In this case, you will need to make it smaller
+
+-   Reconfigure the bandpass filter between 1 to 40. Even if you did this step before, check if it has been implemented
+
+Once these two steps are done, you wave should look something like this:
+
+![](images/clipboard-1600982436.png)
+
+These are better representation of your EEG readings. To make sense of brain activity and what is actually happening, we will need to use an FFT graph. An FFT graph stands for Fast Fourier Transform graph and they show which frequencies are present in a vibration during a certain period of time. To enable the FFT graph click on the FFT button in the top left corner.
+
+![](images/clipboard-1062802552.png)
+
+The FFT graph below shows you what frequencies are most recurring in the given time. Since we have filtered in brain waves between 1 to 40 hz. You can see which region has more brain activity.
+
+## FFT as an indicator of clean data
+
+![](images/clipboard-3912656479.png)
+
+The blue on the graph is an indication that the setup is fine and there is no unwanted noise being picked up. The more blue the graph the clearer the data. Every time there is significant brain activity, it can be seen through green strips on the graph. So ideally a good FFT should have predominantly blue strip with hints of green.
+
+![](images/clipboard-366686405.png)
+
+If your graph looks something like the one given above, with blues and strong greens. You have an intermediate state, where the electrical activity is being recorded by there is still some noise. You will need little readjustments to get a clean graph
+
+![](images/clipboard-924868132.png)
+
+If your graph looks like something given above with a lot of yellow and reds it means that the sensor is picking up a lot of noise and you will to readjust the electrodes, apply more gel, look foe external noise like electric appliances etc.
+
+Do not worry if your graph looks like this for the fist few minutes of your session, it is a very common occurrence as the sensors are very sensitive
+
+## Eyes open vs Eyes closed states
+
+Since we are recording brain waves from the visual cortex. You can clearly visualize the difference between eyes open and eyes closed states.
+
+Eyes open has lesser brain activity and the waves have a smaller amplitude
+
+![](images/Screenshot (262).png)
+
+Eyes closed has more brain activity especially between 8 to 20 hz range. This indicate the production of Alpha waves and beta waves. Alpha waves are produced when the brain is relaxed, and beta waves when the brain is focused.
+
+![](images/Screenshot (239).png)

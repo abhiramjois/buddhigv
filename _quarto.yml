@@ -18,7 +18,9 @@ book:
         - art.qmd
     - part: "Experimentation"
       chapters:  
-        - intro.qmd
+        - record.qmd
+        - byb.qmd
+        - brbay.qmd
     - part: "Speculation"
       chapters:
         - summary.qmd

@@ -1,0 +1,49 @@
+# Setup to record EEG from the visual cortex
+
+## Materials Required
+
+-   Bio Amp EXG Pill (soldered)
+
+-   Gel electrode patches
+
+-   Electrode headband
+
+-   Conductive gel
+
+-   Arduino and connector cable
+
+-   Jumper wires
+
+-   Laptop
+
+## Assembling the circuit
+
+The BIOAMP EXG Pill is connected to an Arduino board one end using jumper wires and to the electrodes on the other end. Connect the Arduino to a laptop.
+
+![](images/clipboard-853366779.png)
+
+The positive and negative wires are connected to the band and the ground wire is connected to a gel electrode.
+
+![](images/clipboard-4134519690.png)
+
+## Placing the electrodes on the scalp
+
+The band needs to be worn by the user, tightly enough so that there is not gap between the electrodes and the scalp. The band needs to worn in such a way that it is touching the scalp directly. Apply some conductive gel on both electrodes to improve the signal reading.
+
+![](images/clipboard-2783055425.png)
+
+The placement of the positive and negative electrodes must be on the back of the head. I have tried multiple placements, I have gotten clean results when the electrodes are placed behind the head slightly above the ear. Place the ground electrode with the gel electrode patch behind the participants right ear.
+
+![](images/clipboard-1512373558.png)
+
+## Things that might help
+
+-   There must be no switched on electrical appliances or AC current devices very close to the sensor. This includes charging your laptop, connecting HDMI to an external monitor etc.
+
+-   The users needs to sit stable and minimize movement as much as possible. Any movements like eyebrow movements, eye blinks etc will cause interference in the signal
+
+-   It will take 5 to 10 minutes to get the user and the interface adjusted to each other. Until then feel free to try out different positions and placements. Feel free to add the conductive gel once again while readjusting the placement of the electrodes. It might take some trial and error to get clean readings.
+
+-   Once the session is done, it is advisable for users to wash their hair. Wash the band and the + and - electrodes once you are done. Prolonged exposure to the gel might corrode the electrode.
+
+![](images/clipboard-2267831741.png)

@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "Buddhi GV",
     "section": "",
-    "text": "Buddhi GV\n View source code\n\n\nThe project aims to democratize access and understanding of BCI (Brain-Computer Interfaces), particularly non-invasive EEG devices. This website is curated as a supporting repository to a conceptual kiosk proposed to be set up in NIMHANS Museum or other public spaces.\nThe main objective is to compile useful information and resources around the theme of Brain computer interfaces to foster curiosity, experimentation and speculation.\nIf you are someone who engages with BCI and non-invasive EEG devices of any kind, your contribution to this website would be much appreciated. The github repository can be found here.\n    \n        \n            \n            \n                Curiosity\n                What are brain computer interfaces? Where are they used? What is possible with BCI today?\n            \n        \n    \n    \n        \n            \n            \n                Experimentation\n                What can you do with the tech available today? Visualize electrical activity in the brain and record EEG\n            \n        \n    \n    \n        \n            \n            \n                Speculation\n                What is the future of widespread EEG devices? Are you different from your brain? How much of it can you control?",
+    "text": "Buddhi GV\nThe project aims to democratize access and understanding of BCI (Brain-Computer Interfaces), particularly non-invasive EEG devices. This website is curated as a supporting repository to a conceptual kiosk proposed to be set up in NIMHANS Museum or other public spaces.\nThe main objective is to compile useful information and resources around the theme of Brain computer interfaces to foster curiosity, experimentation and speculation.\nIf you are someone who engages with BCI and non-invasive EEG devices of any kind, your contribution to this website would be much appreciated. The github repository can be found here.\n\n    \n        \n            \n            \n                Curiosity\n                What are brain computer interfaces? Where are they used? What is possible with BCI today?\n            \n        \n    \n    \n    \n        \n            \n            \n                Experimentation\n                What can you do with the tech available today? Visualize electrical activity in the brain and record EEG\n            \n        \n    \n    \n    \n        \n            \n            \n                Speculation\n                What is the future of widespread EEG devices? Are you different from your brain? How much of it can you control?\n            \n        \n    \n\n\n View source code",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Buddhi GV</span>"
     ]
@@ -168,6 +168,116 @@
     "text": "View source code",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>![](images/[removal.ai]_162b22c6-11a8-4ac1-9036-2dadecac939a-title.png){width=\"100%\"}</span>"
+    ]
+  },
+  {
+    "objectID": "record.html",
+    "href": "record.html",
+    "title": "Setup to record EEG from the visual cortex",
+    "section": "",
+    "text": "Materials Required",
+    "crumbs": [
+      "Experimentation",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Setup to record EEG from the visual cortex</span>"
+    ]
+  },
+  {
+    "objectID": "record.html#materials-required",
+    "href": "record.html#materials-required",
+    "title": "Setup to record EEG from the visual cortex",
+    "section": "",
+    "text": "Bio Amp EXG Pill (soldered)\nGel electrode patches\nElectrode headband\nConductive gel\nArduino and connector cable\nJumper wires\nLaptop",
+    "crumbs": [
+      "Experimentation",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Setup to record EEG from the visual cortex</span>"
+    ]
+  },
+  {
+    "objectID": "record.html#assembling-the-circuit",
+    "href": "record.html#assembling-the-circuit",
+    "title": "Setup to record EEG from the visual cortex",
+    "section": "Assembling the circuit",
+    "text": "Assembling the circuit\nThe BIOAMP EXG Pill is connected to an Arduino board one end using jumper wires and to the electrodes on the other end. Connect the Arduino to a laptop.\n\nThe positive and negative wires are connected to the band and the ground wire is connected to a gel electrode.",
+    "crumbs": [
+      "Experimentation",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Setup to record EEG from the visual cortex</span>"
+    ]
+  },
+  {
+    "objectID": "record.html#placing-the-electrodes-on-the-scalp",
+    "href": "record.html#placing-the-electrodes-on-the-scalp",
+    "title": "Setup to record EEG from the visual cortex",
+    "section": "Placing the electrodes on the scalp",
+    "text": "Placing the electrodes on the scalp\nThe band needs to be worn by the user, tightly enough so that there is not gap between the electrodes and the scalp. The band needs to worn in such a way that it is touching the scalp directly. Apply some conductive gel on both electrodes to improve the signal reading.\n\nThe placement of the positive and negative electrodes must be on the back of the head. I have tried multiple placements, I have gotten clean results when the electrodes are placed behind the head slightly above the ear. Place the ground electrode with the gel electrode patch behind the participants right ear.",
+    "crumbs": [
+      "Experimentation",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Setup to record EEG from the visual cortex</span>"
+    ]
+  },
+  {
+    "objectID": "record.html#things-that-might-help",
+    "href": "record.html#things-that-might-help",
+    "title": "Setup to record EEG from the visual cortex",
+    "section": "Things that might help",
+    "text": "Things that might help\n\nThere must be no switched on electrical appliances or AC current devices very close to the sensor. This includes charging your laptop, connecting HDMI to an external monitor etc.\nThe users needs to sit stable and minimize movement as much as possible. Any movements like eyebrow movements, eye blinks etc will cause interference in the signal\nIt will take 5 to 10 minutes to get the user and the interface adjusted to each other. Until then feel free to try out different positions and placements. Feel free to add the conductive gel once again while readjusting the placement of the electrodes. It might take some trial and error to get clean readings.\nOnce the session is done, it is advisable for users to wash their hair. Wash the band and the + and - electrodes once you are done. Prolonged exposure to the gel might corrode the electrode.",
+    "crumbs": [
+      "Experimentation",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Setup to record EEG from the visual cortex</span>"
+    ]
+  },
+  {
+    "objectID": "byb.html",
+    "href": "byb.html",
+    "title": "Connecting the setup to the Spike Recorder app",
+    "section": "",
+    "text": "Install Backyard Brains - Spike Recorder app\nThe first step in this process is to install the backyard brains spike recorder app. You can find the link for the installation here",
+    "crumbs": [
+      "Experimentation",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Connecting the setup to the Spike Recorder app</span>"
+    ]
+  },
+  {
+    "objectID": "byb.html#arduino-script",
+    "href": "byb.html#arduino-script",
+    "title": "Connecting the setup to the Spike Recorder app",
+    "section": "Arduino script",
+    "text": "Arduino script\nOnce the app is installed, you will need an Arduino script to communicate with the app through a serial port. I used the script provided by Backyard Brain itself. The script was written to connect their Muscle SpikerShield product, but the same script works with the Bio Amp EXG Pill as well.\nThe code for this script can be found here. Run this script and upload it to the Arduino board. Make sure you remember the serial port the Arduino transmits data to. In the case of my Windows laptop, it was COM14.",
+    "crumbs": [
+      "Experimentation",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Connecting the setup to the Spike Recorder app</span>"
+    ]
+  },
+  {
+    "objectID": "byb.html#spike-recorder-app-configurations",
+    "href": "byb.html#spike-recorder-app-configurations",
+    "title": "Connecting the setup to the Spike Recorder app",
+    "section": "Spike Recorder app configurations",
+    "text": "Spike Recorder app configurations\nOpen the Spike Recorder app. As soon as you open the app, you will see waves on the screen. These are not your EEG waves yet but sound waves being picked up from the speaker by default. To start visualizing EEG waves you will need to configure the app to read from the serial port.\n\nClick on the settings button on the top-left corner\nSet the band pass filter between 1 and 40\nYou can optionally set a notch filter\n\n\nAs soon as you start reading the EEG data it is very likely that you will see something like the image given below. The waves here are too large on the y axis and the filter that you set could most likely be reset.\n\nThere are two ways to fix this.\n\nAdjust the zoom level on the y axis using the + and - buttons. In this case, you will need to make it smaller\nReconfigure the bandpass filter between 1 to 40. Even if you did this step before, check if it has been implemented\n\nOnce these two steps are done, you wave should look something like this:\n\nThese are better representation of your EEG readings. To make sense of brain activity and what is actually happening, we will need to use an FFT graph. An FFT graph stands for Fast Fourier Transform graph and they show which frequencies are present in a vibration during a certain period of time. To enable the FFT graph click on the FFT button in the top left corner.\n\nThe FFT graph below shows you what frequencies are most recurring in the given time. Since we have filtered in brain waves between 1 to 40 hz. You can see which region has more brain activity.",
+    "crumbs": [
+      "Experimentation",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Connecting the setup to the Spike Recorder app</span>"
+    ]
+  },
+  {
+    "objectID": "byb.html#fft-as-an-indicator-of-clean-data",
+    "href": "byb.html#fft-as-an-indicator-of-clean-data",
+    "title": "Connecting the setup to the Spike Recorder app",
+    "section": "FFT as an indicator of clean data",
+    "text": "FFT as an indicator of clean data\n\nThe blue on the graph is an indication that the setup is fine and there is no unwanted noise being picked up. The more blue the graph the clearer the data. Every time there is significant brain activity, it can be seen through green strips on the graph. So ideally a good FFT should have predominantly blue strip with hints of green.\n\nIf your graph looks something like the one given above, with blues and strong greens. You have an intermediate state, where the electrical activity is being recorded by there is still some noise. You will need little readjustments to get a clean graph\n\nIf your graph looks like something given above with a lot of yellow and reds it means that the sensor is picking up a lot of noise and you will to readjust the electrodes, apply more gel, look foe external noise like electric appliances etc.\nDo not worry if your graph looks like this for the fist few minutes of your session, it is a very common occurrence as the sensors are very sensitive",
+    "crumbs": [
+      "Experimentation",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Connecting the setup to the Spike Recorder app</span>"
+    ]
+  },
+  {
+    "objectID": "byb.html#eyes-open-vs-eyes-closed-states",
+    "href": "byb.html#eyes-open-vs-eyes-closed-states",
+    "title": "Connecting the setup to the Spike Recorder app",
+    "section": "Eyes open vs Eyes closed states",
+    "text": "Eyes open vs Eyes closed states\nSince we are recording brain waves from the visual cortex. You can clearly visualize the difference between eyes open and eyes closed states.\nEyes open has lesser brain activity and the waves have a smaller amplitude\n\nEyes closed has more brain activity especially between 8 to 20 hz range. This indicate the production of Alpha waves and beta waves. Alpha waves are produced when the brain is relaxed, and beta waves when the brain is focused.",
+    "crumbs": [
+      "Experimentation",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Connecting the setup to the Spike Recorder app</span>"
     ]
   }
 ]
