@@ -4,9 +4,9 @@
     "href": "index.html",
     "title": "Buddhi GV",
     "section": "",
-    "text": "Context\nThe project aims to democratize access and understanding of BCI (Brain-Computer Interfaces), particularly non-invasive EEG devices. This website is curated as a supporting repository to a conceptual kiosk proposed to be set up in NIMHANS Museum or other public spaces.\nThe main objective is to compile useful information and resources around the theme of Brain computer interfaces to foster curiosity, experimentation and speculation.\nIf you are someone who engages with BCI and non-invasive EEG devices of any kind, your contribution to this website would be much appreciated. The github repository can be found here.",
+    "text": "Buddhi GV\n View source code\n\n\nThe project aims to democratize access and understanding of BCI (Brain-Computer Interfaces), particularly non-invasive EEG devices. This website is curated as a supporting repository to a conceptual kiosk proposed to be set up in NIMHANS Museum or other public spaces.\nThe main objective is to compile useful information and resources around the theme of Brain computer interfaces to foster curiosity, experimentation and speculation.\nIf you are someone who engages with BCI and non-invasive EEG devices of any kind, your contribution to this website would be much appreciated. The github repository can be found here.\n\n    \n        \n            \n            \n                Curiosity\n                What are brain computer interfaces? Where are they used? What is possible with BCI today?\n            \n        \n    \n    \n    \n        \n            \n            \n                Eperimentation\n                What can you do with the tech available today? Visualize electrical ectivity in the brain and record EEG\n            \n        \n    \n    \n    \n        \n            \n            \n                Speculation\n                What is the future of widespread EEG devices? Are you different from your brain? How much of it can you control?",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Context</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Buddhi GV</span>"
     ]
   },
   {
@@ -17,7 +17,7 @@
     "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
       "Experimentation",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Introduction</span>"
     ]
   },
   {
@@ -69,7 +69,7 @@
     "text": "EEG Bands\nBased on the frequency of the electrical activity, EEG is divided into subgroups. The different types of brain waves are",
     "crumbs": [
       "Curiosity",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Non Invasive EEG</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Non Invasive EEG</span>"
     ]
   },
   {
@@ -80,7 +80,7 @@
     "text": "Delta (less than 4 Hz): Delta waves are observed in the EEG signal when a person is asleep\nTheta (4–8 Hz): Theta waves are observed when a person is sleepy or drowsy\nAlpha (8–13 Hz): Alpha waves are observed when a person is relaxed where the muscles are loose but they are awake.\nBeta (13–30 Hz): Beta waves are prominent when a person is alert, busy, active or similar states\nGamma (30–100 Hz): Gamma waves are observed when a person is trying to solve a problem\n\n\n\n\nimage source: https://ars.els-cdn.com/content/image/3-s2.0-B9780128044902000026-f02-01-9780128044902.jpg",
     "crumbs": [
       "Curiosity",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Non Invasive EEG</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Non Invasive EEG</span>"
     ]
   },
   {
@@ -91,7 +91,7 @@
     "text": "International 10-20 System\nThe 10-20 system is a globally accepted method to describe and apply scalp electrodes on a person’s head while recording EEG. Depending on the number of electrodes available and the EEG band primarily being recorded, the placement on the scalp is decided.\n\nEach electrode placement site has a letter to identify area of the brain it is reading from: pre-frontal (Fp), frontal (F), temporal (T), parietal (P), occipital (O), and central (C).\n“Z” electrodes are often utilized as ‘grounds’ or ‘references’. FpZ, Fz, Cz, Oz are zero sites and present mostly for reference/measurement points.\nEven-numbered electrodes (2,4,6,8) refer to electrode placement on the right side of the head, whereas odd numbers (1,3,5,7) refer to those on the left",
     "crumbs": [
       "Curiosity",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Non Invasive EEG</span>"
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Non Invasive EEG</span>"
     ]
   },
   {
@@ -157,7 +157,17 @@
     "text": "MindPool\nMindPool was an installation that encouraged self-reflection through biofeedback. It collected alpha, beta, delta, and theta brainwaves to create ripples in 48 shallow pools of water thanks. The installation is the work of an artist called Lisa Park. (Long and Vines 2013)\n\n\n\nOriginal Ideal\nWith Original Ideal, Chasserot explores new ideas about beauty being a function of personal identity, as opposed to the contexts of societal standards. The first step involves capturing images of his subjects in minimal, basic, and effortless states. Followed by digital modifica- tions to the captured image. The participants are then hooked up to an Emotiv EEG brain scanner, and shown 50 edited images. Those brain scans are then analyzed for brain activity that can denote a positive emotional reaction to understand how our brain responds to societal standards of beauty. (Mufson 2014)\n\n\n\nInteractive Brain Light\nInteractive Brain Light is artist Laura Jade’s new EEG- controlled installation, Brain Light Project is a light sculpture designed to create a biofeedback loop of light, sound, and thought. In a process developed by Jade, neuroscientist Peter Simpson-Young, and programmer Sam Gentle, the installation becomes a real-time visualization of visitors’ alpha, theta, and beta brainwaves. (Laura Jade 2015)\n\n\n\n\n\nLaura Jade. 2015. “INTERACTIVE BRAIN LIGHT Illuminated by Brainwaves,” June. https://www.youtube.com/watch?v=SvwTqnI3f4U.\n\n\nLong, Kiel, and John Vines. 2013. “Mind Pool: Encouraging Self-Reflection Through Ambiguous Bio-Feedback.” In, 29752978. CHI EA ’13. New York, NY, USA: Association for Computing Machinery. https://doi.org/10.1145/2468356.2479588.\n\n\nMufson, Beckett. 2014. “Can Brain Scans Reveal Your Ideal Self-Image?” https://www.vice.com/en/article/gvwvb3/can-brain-scans-reveal-your-ideal-self-image.",
     "crumbs": [
       "Curiosity",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>EEG in Art and Performance</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>EEG in Art and Performance</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#section",
+    "href": "index.html#section",
+    "title": "",
+    "section": "",
+    "text": "View source code",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>![](images/[removal.ai]_162b22c6-11a8-4ac1-9036-2dadecac939a-title.png){width=\"100%\"}</span>"
     ]
   }
 ]

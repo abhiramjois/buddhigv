@@ -2,9 +2,10 @@ project:
   type: book
 
 book:
-  title: "Buddhi GV"
-  subtitle: "Democratizing Brain Computer Interfaces to foster curiosity. experimentation and speculation"
+  #title: "Buddhi GV"
+  #subtitle: "Democratizing Brain Computer Interfaces to foster curiosity. experimentation and speculation"
   #cover-image: images/cover.jpg
+  #repo-url: https://github.com/abhiramjois/buddhigv
   favicon: images/bgv.png
   chapters: 
     - index.qmd
@@ -32,6 +33,8 @@ format:
     bread-crumbs: false 
     theme: cyborg
     number-sections: false
+    toc-title: "On this page"
+    toc: false
     
   pdf:
     documentclass: scrreprt
