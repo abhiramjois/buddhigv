@@ -34,7 +34,7 @@ format:
     theme: cyborg
     number-sections: false
     toc-title: "On this page"
-    toc: false
+    toc: true
     
   pdf:
     documentclass: scrreprt
