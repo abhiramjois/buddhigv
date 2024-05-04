@@ -3,7 +3,7 @@
     "path": "C:/Users/91876/Downloads/buddhigv/index.qmd",
     "project_path": "index.qmd",
     "type": "quarto_markdown",
-    "hash": "1044453553",
+    "hash": "3593083754",
     "contents": "",
     "dirty": false,
     "created": 1714661668248.0,
@@ -16,16 +16,16 @@
         "Source": "Source",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "136:0",
+        "rmdVisualModeLocation": "11:0",
         "cursorPosition": "0,0",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1714780458,
+    "lastKnownWriteTime": 1714781209,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1714780458511,
+    "last_content_update": 1714781209612,
     "read_only": false,
     "read_only_alternatives": []
 }
