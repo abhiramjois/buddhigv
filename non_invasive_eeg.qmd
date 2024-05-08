@@ -30,8 +30,6 @@ The 10-20 system is a globally accepted method to describe and apply scalp elect
 
 -   "Z" electrodes are often utilized as 'grounds' or 'references'. FpZ, Fz, Cz, Oz are zero sites and present mostly for reference/measurement points.
 
--   Even-numbered electrodes (2,4,6,8) refer to electrode placement on the
-    right side of the head, whereas odd numbers (1,3,5,7) refer to those on
-    the left
+-   Even-numbered electrodes (2,4,6,8) refer to electrode placement on the right side of the head, whereas odd numbers (1,3,5,7) refer to those on the left
 
 ![](images/The-10-20-International-system-of-EEG-electrode-placement.png)

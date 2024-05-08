@@ -50,7 +50,7 @@ To connect our setup to this design, we need night click on the EEG node. You wi
 
 Once you connect the port to the design you will be able to see activity in the oscilloscope and FFT. As soon as the connection is done, you might see huge spikes and a lot noise in the FFT. This is normal and you will to do some trial/error and readjustments till you see the Oscilloscope has small waves and the FFT is mostly red in colour. This is similar to the FFT and data clarity discussed in the previous experiment with the spike recorder app.
 
-![](images/Screenshot (393).png)
+![](images/Screenshot%20(393).png)
 
 ## Eyes open vs eyes closed
 
@@ -58,8 +58,8 @@ Once you are settled and the data acquisition is clear you will be able to see c
 
 Eyes open shows a more red FFT graph with very little activity and EEG waves with short amplitudes.
 
-![](images/Screenshot (374).png)
+![](images/Screenshot%20(374).png)
 
 Eyes closed shows a more colourful FFT graph with EEG waves of bigger amplitudes implying the production of alpha and beta waves.
 
-![](images/Screenshot (319).png)
+![](images/Screenshot%20(319).png)

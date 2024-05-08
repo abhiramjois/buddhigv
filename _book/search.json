@@ -23,11 +23,12 @@
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "2  Summary",
+    "title": "Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Summary</span>"
+      "Speculation",
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {
@@ -278,6 +279,61 @@
     "crumbs": [
       "Experimentation",
       "<span class='chapter-number'>8</span>  <span class='chapter-title'>Connecting the setup to the Spike Recorder app</span>"
+    ]
+  },
+  {
+    "objectID": "brbay.html",
+    "href": "brbay.html",
+    "title": "BrainBay - A visual programming language",
+    "section": "",
+    "text": "Installing BrainBay\nThe first step is to install BrainBay software. The link for the installation can be found here",
+    "crumbs": [
+      "Experimentation",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>BrainBay - A visual programming language</span>"
+    ]
+  },
+  {
+    "objectID": "brbay.html#arduino-script",
+    "href": "brbay.html#arduino-script",
+    "title": "BrainBay - A visual programming language",
+    "section": "Arduino script",
+    "text": "Arduino script\nOnce the app is installed, you will need an Arduino script to communicate with the app through a serial port. The program was design by Olimex to give users an easy way to connect Olimexino328 to ElectricGuru(TM).\nThe same code was implemented by Upsidedownlabs to connect their BioAmp EXG Pill to Brainbay.\nThe code for this script can be found here. Run this script and upload it to the Arduino board. Make sure you remember the serial port the Arduino transmits data to. In the case of my Windows laptop, it was COM14.",
+    "crumbs": [
+      "Experimentation",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>BrainBay - A visual programming language</span>"
+    ]
+  },
+  {
+    "objectID": "brbay.html#loading-a-design-in-brainbay",
+    "href": "brbay.html#loading-a-design-in-brainbay",
+    "title": "BrainBay - A visual programming language",
+    "section": "Loading a design in Brainbay",
+    "text": "Loading a design in Brainbay\nAs soon as you open the app, you will be prompted with this interface. You can either choose start of with their give options, load an existing sketch from a .con file or start a new sketch altogether.\n\nFor this demonstration, I have created a simple design which displays EEG on a Oscilloscope and plots an FFT graph.\nYou can download the sketch for your own use here\nOnce you have downloaded the sketch, click on ‘Design’ and then ‘load design’. You will be given an option to upload design to work on. Upload the BioAmp.con file you just downloaded.\n\nyou will also be able to choose from pre existing designs that are installed with the software.",
+    "crumbs": [
+      "Experimentation",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>BrainBay - A visual programming language</span>"
+    ]
+  },
+  {
+    "objectID": "brbay.html#oscilloscope-and-fft",
+    "href": "brbay.html#oscilloscope-and-fft",
+    "title": "BrainBay - A visual programming language",
+    "section": "Oscilloscope and FFT",
+    "text": "Oscilloscope and FFT\nOnce you open the design you will be able to see a blank oscilloscope, a static FFT graph and a design. The elements presently have no data as they aren’t connected to the right serial port.\nTo make any changes to the design you need to go to the ‘Design’ window on screen. Currently this design takes input from and EEG, filter the data based on frequency between 1 and 40 hz and sends the filtered data to an oscilloscope and a 3D FFT graph.\n\nTo connect our setup to this design, we need night click on the EEG node. You will then be prompted with a set of options including the one to connect to an active serial port. You have to click on the Connect/Disconnect button and ensure the box above it is ticked.\n\nOnce you connect the port to the design you will be able to see activity in the oscilloscope and FFT. As soon as the connection is done, you might see huge spikes and a lot noise in the FFT. This is normal and you will to do some trial/error and readjustments till you see the Oscilloscope has small waves and the FFT is mostly red in colour. This is similar to the FFT and data clarity discussed in the previous experiment with the spike recorder app.",
+    "crumbs": [
+      "Experimentation",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>BrainBay - A visual programming language</span>"
+    ]
+  },
+  {
+    "objectID": "brbay.html#eyes-open-vs-eyes-closed",
+    "href": "brbay.html#eyes-open-vs-eyes-closed",
+    "title": "BrainBay - A visual programming language",
+    "section": "Eyes open vs eyes closed",
+    "text": "Eyes open vs eyes closed\nOnce you are settled and the data acquisition is clear you will be able to see clear differences in the eye open and eyes closed states\nEyes open shows a more red FFT graph with very little activity and EEG waves with short amplitudes.\n\nEyes closed shows a more colourful FFT graph with EEG waves of bigger amplitudes implying the production of alpha and beta waves.",
+    "crumbs": [
+      "Experimentation",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>BrainBay - A visual programming language</span>"
     ]
   }
 ]

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Non Invasive EEG</title>
+<title>BrainBay - A visual programming language</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./med.html" rel="next">
-<link href="./bci.html" rel="prev">
+<link href="./summary.html" rel="next">
+<link href="./byb.html" rel="prev">
 <link href="./images/bgv.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -82,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./bci.html">Curiosity</a></li><li class="breadcrumb-item"><a href="./non_invasive_eeg.html"><span class="chapter-title">Non Invasive EEG</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./record.html">Experimentation</a></li><li class="breadcrumb-item"><a href="./brbay.html"><span class="chapter-title">BrainBay - A visual programming language</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -123,7 +123,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./non_invasive_eeg.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Non Invasive EEG</span></a>
+  <a href="./non_invasive_eeg.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Non Invasive EEG</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -164,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./brbay.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">BrainBay - A visual programming language</span></a>
+  <a href="./brbay.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">BrainBay - A visual programming language</span></a>
   </div>
 </li>
       </ul>
@@ -201,8 +201,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#eeg-bands" id="toc-eeg-bands" class="nav-link active" data-scroll-target="#eeg-bands">EEG Bands</a></li>
-  <li><a href="#international-10-20-system" id="toc-international-10-20-system" class="nav-link" data-scroll-target="#international-10-20-system">International 10-20 System</a></li>
+  <li><a href="#installing-brainbay" id="toc-installing-brainbay" class="nav-link active" data-scroll-target="#installing-brainbay">Installing BrainBay</a></li>
+  <li><a href="#arduino-script" id="toc-arduino-script" class="nav-link" data-scroll-target="#arduino-script">Arduino script</a></li>
+  <li><a href="#loading-a-design-in-brainbay" id="toc-loading-a-design-in-brainbay" class="nav-link" data-scroll-target="#loading-a-design-in-brainbay">Loading a design in Brainbay</a></li>
+  <li><a href="#oscilloscope-and-fft" id="toc-oscilloscope-and-fft" class="nav-link" data-scroll-target="#oscilloscope-and-fft">Oscilloscope and FFT</a></li>
+  <li><a href="#eyes-open-vs-eyes-closed" id="toc-eyes-open-vs-eyes-closed" class="nav-link" data-scroll-target="#eyes-open-vs-eyes-closed">Eyes open vs eyes closed</a></li>
   </ul>
 </nav>
     </div>
@@ -210,40 +213,52 @@ ul.task-list li input[type="checkbox"] {
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header">
-<h1 class="title display-7"><span class="chapter-title">Non Invasive EEG</span></h1>
+<h1 class="title display-7"><span class="chapter-title">BrainBay - A visual programming language</span></h1>
 
 </header>
 
 
-<p>Non invasive EEG refers to brain computer interfaces that use electrodes that are placed on the scalp to record the electrical activity of the brain. They use a method called EEG which stands for Electroencephalography.</p>
-<p>Voltage fluctuations measured by a bioamplifier and electrodes allow the evaluation of normal brain activity. As the electrical activity monitored by EEG originates in neurons in the underlying brain tissue, the recordings made by the electrodes on the surface of the scalp vary in accordance with their orientation and distance to the source of the activity.</p>
-<p>A healthy EEG ranges between the frequency of 1 and 30&nbsp;Hz, and amplitudes will vary between 20 and 100 μV.</p>
-<section id="eeg-bands" class="level2">
-<h2 class="anchored" data-anchor-id="eeg-bands">EEG Bands</h2>
-<p>Based on the frequency of the electrical activity, EEG is divided into subgroups. The different types of brain waves are</p>
-<ul>
-<li><p>Delta (less than 4 Hz): Delta waves are observed in the EEG signal when a person is asleep</p></li>
-<li><p>Theta (4–8 Hz): Theta waves are observed when a person is sleepy or drowsy</p></li>
-<li><p>Alpha (8–13 Hz): Alpha waves are observed when a person is relaxed where the muscles are loose but they are awake.</p></li>
-<li><p>Beta (13–30 Hz): Beta waves are prominent when a person is alert, busy, active or similar states</p></li>
-<li><p>Gamma (30–100 Hz): Gamma waves are observed when a person is trying to solve a problem</p></li>
-</ul>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/3-s2.0-B9780128044902000026-f02-01-9780128044902.jpg" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption>image source: https://ars.els-cdn.com/content/image/3-s2.0-B9780128044902000026-f02-01-9780128044902.jpg</figcaption>
-</figure>
-</div>
+<p>In this experiment, we will look at how to connect the BioAmp EXG Pill and Arduino that we setup to BrainBay is an open source bio- and neurofeedback application and a visual programming language. It also offers some features for the creation of alternative Human-Computer-Interfaces (HCIs) such as facetracking via webcam, EMG signal pattern recognition.</p>
+<section id="installing-brainbay" class="level2">
+<h2 class="anchored" data-anchor-id="installing-brainbay">Installing BrainBay</h2>
+<p>The first step is to install BrainBay software. The link for the installation can be found <a href="https://github.com/ChrisVeigl/BrainBay/releases">here</a></p>
+<p><img src="images/clipboard-2259142350.png" class="img-fluid"></p>
 </section>
-<section id="international-10-20-system" class="level2">
-<h2 class="anchored" data-anchor-id="international-10-20-system">International 10-20 System</h2>
-<p>The 10-20 system is a globally accepted method to describe and apply scalp electrodes on a person’s head while recording EEG. Depending on the number of electrodes available and the EEG band primarily being recorded, the placement on the scalp is decided.</p>
-<ul>
-<li><p>Each electrode placement site has a letter to identify area of the brain it is reading from: pre-frontal (Fp), frontal (F), temporal (T), parietal (P), occipital (O), and central (C).</p></li>
-<li><p>“Z” electrodes are often utilized as ‘grounds’ or ‘references’. FpZ, Fz, Cz, Oz are zero sites and present mostly for reference/measurement points.</p></li>
-<li><p>Even-numbered electrodes (2,4,6,8) refer to electrode placement on the right side of the head, whereas odd numbers (1,3,5,7) refer to those on the left</p></li>
-</ul>
-<p><img src="images/The-10-20-International-system-of-EEG-electrode-placement.png" class="img-fluid"></p>
+<section id="arduino-script" class="level2">
+<h2 class="anchored" data-anchor-id="arduino-script">Arduino script</h2>
+<p>Once the app is installed, you will need an Arduino script to communicate with the app through a serial port. The program was design by Olimex to give users an easy way to connect Olimexino328 to ElectricGuru(TM).</p>
+<p>The same code was implemented by Upsidedownlabs to connect their BioAmp EXG Pill to Brainbay.</p>
+<p>The code for this script can be found here. Run this script and upload it to the Arduino board. Make sure you remember the serial port the Arduino transmits data to. In the case of my Windows laptop, it was COM14.</p>
+<p><img src="images/clipboard-1252174414.png" class="img-fluid"></p>
+</section>
+<section id="loading-a-design-in-brainbay" class="level2">
+<h2 class="anchored" data-anchor-id="loading-a-design-in-brainbay">Loading a design in Brainbay</h2>
+<p>As soon as you open the app, you will be prompted with this interface. You can either choose start of with their give options, load an existing sketch from a .con file or start a new sketch altogether.</p>
+<p><img src="images/clipboard-1397982738.png" class="img-fluid"></p>
+<p>For this demonstration, I have created a simple design which displays EEG on a Oscilloscope and plots an FFT graph.</p>
+<p>You can download the sketch for your own use here</p>
+<p>Once you have downloaded the sketch, click on ‘Design’ and then ‘load design’. You will be given an option to upload design to work on. Upload the BioAmp.con file you just downloaded.</p>
+<p><img src="images/clipboard-39156655.png" class="img-fluid"></p>
+<p>you will also be able to choose from pre existing designs that are installed with the software.</p>
+<p><img src="images/clipboard-279554677.png" class="img-fluid"></p>
+</section>
+<section id="oscilloscope-and-fft" class="level2">
+<h2 class="anchored" data-anchor-id="oscilloscope-and-fft">Oscilloscope and FFT</h2>
+<p>Once you open the design you will be able to see a blank oscilloscope, a static FFT graph and a design. The elements presently have no data as they aren’t connected to the right serial port.</p>
+<p>To make any changes to the design you need to go to the ‘Design’ window on screen. Currently this design takes input from and EEG, filter the data based on frequency between 1 and 40 hz and sends the filtered data to an oscilloscope and a 3D FFT graph.</p>
+<p><img src="images/clipboard-1618959132.png" class="img-fluid"></p>
+<p>To connect our setup to this design, we need night click on the EEG node. You will then be prompted with a set of options including the one to connect to an active serial port. You have to click on the Connect/Disconnect button and ensure the box above it is ticked.</p>
+<p><img src="images/clipboard-1363573763.png" class="img-fluid"></p>
+<p>Once you connect the port to the design you will be able to see activity in the oscilloscope and FFT. As soon as the connection is done, you might see huge spikes and a lot noise in the FFT. This is normal and you will to do some trial/error and readjustments till you see the Oscilloscope has small waves and the FFT is mostly red in colour. This is similar to the FFT and data clarity discussed in the previous experiment with the spike recorder app.</p>
+<p><img src="images/Screenshot (393).png" class="img-fluid"></p>
+</section>
+<section id="eyes-open-vs-eyes-closed" class="level2">
+<h2 class="anchored" data-anchor-id="eyes-open-vs-eyes-closed">Eyes open vs eyes closed</h2>
+<p>Once you are settled and the data acquisition is clear you will be able to see clear differences in the eye open and eyes closed states</p>
+<p>Eyes open shows a more red FFT graph with very little activity and EEG waves with short amplitudes.</p>
+<p><img src="images/Screenshot (374).png" class="img-fluid"></p>
+<p>Eyes closed shows a more colourful FFT graph with EEG waves of bigger amplitudes implying the production of alpha and beta waves.</p>
+<p><img src="images/Screenshot (319).png" class="img-fluid"></p>
 
 
 </section>
@@ -660,13 +675,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./bci.html" class="pagination-link" aria-label="Introduction to BCI">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Introduction to BCI</span></span>
+      <a href="./byb.html" class="pagination-link" aria-label="Connecting the setup to the Spike Recorder app">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Connecting the setup to the Spike Recorder app</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./med.html" class="pagination-link" aria-label="Medical applications of EEG">
-        <span class="nav-page-text"><span class="chapter-title">Medical applications of EEG</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./summary.html" class="pagination-link" aria-label="Summary">
+        <span class="nav-page-text"><span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

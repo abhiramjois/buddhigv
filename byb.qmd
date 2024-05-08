@@ -70,8 +70,8 @@ Since we are recording brain waves from the visual cortex. You can clearly visua
 
 Eyes open has lesser brain activity and the waves have a smaller amplitude
 
-![](images/Screenshot (262).png)
+![](images/Screenshot%20(262).png)
 
 Eyes closed has more brain activity especially between 8 to 20 hz range. This indicate the production of Alpha waves and beta waves. Alpha waves are produced when the brain is relaxed, and beta waves when the brain is focused.
 
-![](images/Screenshot (239).png)
+![](images/Screenshot%20(239).png)
